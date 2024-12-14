@@ -1,10 +1,10 @@
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/c828efd4-4574-4112-a696-423f91b4e87c" width="200">
-</div>
-
 # 🐝 Sistema de Gestión Apícola 🐝
 
 Bienvenido al sistema de **Gestión de Colmenas** para explotaciones apícolas. Este programa, desarrollado en Java, utiliza los principios de **Programación Orientada a Objetos (POO)** para facilitar el manejo y monitoreo eficiente de las colmenas.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/c828efd4-4574-4112-a696-423f91b4e87c" width="200">
+</div>
 
 ## 🌿 **Características Principales**
 
