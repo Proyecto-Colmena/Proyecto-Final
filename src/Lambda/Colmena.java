@@ -85,24 +85,27 @@ public class Colmena {
             scanner.nextLine(); // Consumir salto de línea
 
             switch (opcion) {
-                case 1:
+                case 1: //Mostrar Lista de Colmenas
                     System.out.println("\nLista de todas las colmenas:");
                     colmenas.forEach(System.out::println);
                     break;
-                case 2:
+                    
+                case 2: //Mostrar Colmenas que necesitan Atencion
                     System.out.println("\nColmenas que necesitan atención inmediata:");
                     List<Colmena> colmenasEnMalEstado = colmenas.stream()
                             .filter(c -> c.getEstadoSalud().equalsIgnoreCase("Mala"))
                             .collect(Collectors.toList());
                     colmenasEnMalEstado.forEach(System.out::println);
                     break;
-                case 3:
+                    
+                case 3: //Ingresar Colmena
                     System.out.print("\nIngrese el ID de la nueva colmena: ");
                     String id = scanner.nextLine();
                     if (colmenas.stream().anyMatch(c -> c.getId().equalsIgnoreCase(id))) {
                         System.out.println("Error: Ya existe una colmena con ese ID.");
                         break;
                     }
+                    //Datos de Nueva Colmena
                     System.out.print("Ingrese la ubicación: ");
                     String ubicacion = scanner.nextLine();
                     System.out.print("Ingrese el estado de salud (Buena/Regular/Mala): ");
@@ -114,7 +117,8 @@ public class Colmena {
                     colmenas.add(new Colmena(id, ubicacion, estadoSalud, cantidadAbejas, produccionMiel));
                     System.out.println("¡Colmena agregada exitosamente!");
                     break;
-                case 4:
+                    
+                case 4: //Actualizar Estado de la Colmena
                     System.out.print("\nIngrese el ID de la colmena a actualizar: ");
                     String idActualizar = scanner.nextLine();
                     Optional<Colmena> colmenaOpt = colmenas.stream()
@@ -130,14 +134,16 @@ public class Colmena {
                         System.out.println("Error: No se encontró una colmena con ese ID.");
                     }
                     break;
-                case 5:
+                    
+                case 5: //Promedio de Abejas
                     double promedioAbejas = colmenas.stream()
                             .mapToInt(Colmena::getCantidadAbejas)
                             .average()
                             .orElse(0.0);
                     System.out.println("\nEl promedio de abejas por colmena es: " + promedioAbejas);
                     break;
-                case 6:
+                    
+                case 6: //Identificar Colmena con Mayor Produccion
                     Colmena mayorProduccion = colmenas.stream()
                             .max((c1, c2) -> Integer.compare(c1.getProduccionMiel(), c2.getProduccionMiel()))
                             .orElse(null);
@@ -148,10 +154,12 @@ public class Colmena {
                         System.out.println("No hay colmenas registradas.");
                     }
                     break;
-                case 7:
+                    
+                case 7: //Cerrar
                     System.out.println("¡Gracias por usar el programa, adios!");
                     continuar = false;
                     break;
+                    
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
