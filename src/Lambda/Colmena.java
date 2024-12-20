@@ -26,7 +26,6 @@ public class Colmena {
         this.cantidadAbejas = cantidadAbejas;
         this.produccionMiel = produccionMiel;
     }
-
     // Getters y Setters
     public String getId() {
         return id;
@@ -164,7 +163,6 @@ public class Colmena {
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
         }
-
         scanner.close();
     }
 }
