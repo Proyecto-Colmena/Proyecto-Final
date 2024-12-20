@@ -1,8 +1,6 @@
 // -------------------------------------------------------------
-// Autor: Pedro Grant
-// Cédula: 3-725-1359
-// Comentario: Este código es importante porque permite simular
-// la gestión de una colmena mediante el uso de hilos para la
+// Comentario: Este código permite simular la gestion
+// de una colmena mediante el uso de hilos para la
 // concurrencia y recursividad para la simulación del crecimiento
 // de la cantidad de abejas y la producción de miel. Al incluir
 // estos elementos, el código demuestra técnicas avanzadas en
@@ -10,7 +8,7 @@
 // un entorno multitarea y recursivo.
 // -------------------------------------------------------------public class Colmena implements Runnable {
 
-
+// Declaracion de variables
     private String identificacion;
     private String ubicacion;
     private String estadoSalud;
