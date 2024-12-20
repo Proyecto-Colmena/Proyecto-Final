@@ -11,6 +11,7 @@ public class ValidacionDatos {
     public static void validarNombre(String nombre) throws IllegalArgumentException {
         if (nombre == null || nombre.isBlank()) {
             throw new IllegalArgumentException("El nombre no puede estar vacío o nulo.");
+            
         }
     }
 }
