@@ -25,7 +25,7 @@ public class Inspeccion implements Serializable {
         }
 
         // Obtenemos la primera inspección y construimos el resultado formateado.
-        Inspeccion inspeccion = inspecciones.get(0);
+        Inspeccion inspeccion = inspecciones.getFirst();
         String result = " ".repeat(nivel * 4) + // Añadimos sangría dinámica según el nivel de profundidad.
                 String.format("📅 Fecha: %s\n", inspeccion.fecha) +
                 " ".repeat(nivel * 4) +
@@ -61,7 +61,7 @@ public class Inspeccion implements Serializable {
                     // Mostramos un mensaje de inicio de la inspección para cada colmena.
                     runWithBlock(() -> Utilidades.printWithDelay("🕵️ Inspeccionando la colmena " + colmena.id + "...", 50));
 
-                    // Simulamos el tiempo de inspección con un retraso aleatorio entre 500ms y 1500ms.
+                    // Simulamos el tiempo de inspección con un retraso aleatorio
                     Random random = new Random();
                     int tiempoInspeccion = random.nextInt(1000) + 500;
                     Thread.sleep(tiempoInspeccion);
