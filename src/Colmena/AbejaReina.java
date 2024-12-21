@@ -12,7 +12,6 @@ public class AbejaReina extends Abeja {
 
     public String getInfo() {
         return super.getInfo() + String.format("""
-                👑 Abeja Reina
                 🕰️ Edad: %d años
                 🍯 Productividad: %.2f kg de miel
                 """, edad, productividad);
