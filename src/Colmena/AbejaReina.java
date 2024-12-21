@@ -6,6 +6,6 @@ public class AbejaReina extends Abeja {
     
   }
   public void supervisarColmena() {
-    System.out.println(nombre + "Supervisa el trabajo de las abejas obreras. ")
+    System.out.println(nombre + " Supervisa el trabajo de las abejas obreras. "); // Supervisión
   }
 }
