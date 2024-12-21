@@ -1,4 +1,5 @@
 package Colmena;
+
 import java.io.Serializable;
 
 // La clase Abeja representa una abeja común con un atributo específico para su estado de salud.
