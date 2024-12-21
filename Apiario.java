@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+//Inicio de clase Apiario
 public class Apiario {
 
     static class Colmena {
@@ -14,7 +14,7 @@ public class Apiario {
             this.produccionMiel = produccionMiel;
             this.estadoSalud = estadoSalud;
         }
-
+        //LLama la clase de validacion id
         public String getId() {
             return id;
         }
@@ -22,7 +22,7 @@ public class Apiario {
         public double getProduccionMiel() {
             return produccionMiel;
         }
-
+            
         public String getEstadoSalud() {
             return estadoSalud;
         }
