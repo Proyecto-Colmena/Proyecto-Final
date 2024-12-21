@@ -51,7 +51,7 @@ Bienvenido al sistema de **Gestión de Colmenas** para explotaciones apícolas. 
 
 ## 🎨 **Video de Referencia**
 
-[![Video de referencia](https://img.youtube.com/vi/_wERDgsPrAY/0.jpg)](https://www.youtube.com/watch?v=uZdaZwTTtdU)
+[![Video de referencia](https://img.youtube.com/vi/uZdaZwTTtdU/0.jpg)](https://www.youtube.com/watch?v=uZdaZwTTtdU)
 
 
 ---
