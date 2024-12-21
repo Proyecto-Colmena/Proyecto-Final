@@ -1,0 +1,3 @@
+public static void verificarDatos(List<Colmena> colmenas, List<Apicultor> 
+apicultores, Map<String, Apicultor> asignaciones) {
+        Scanner scanner = new Scanner(System.in);
