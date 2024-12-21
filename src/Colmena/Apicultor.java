@@ -1,4 +1,5 @@
 package Colmena;
+
 import java.io.Serializable;
 
 // Clase que representa a un apicultor.
