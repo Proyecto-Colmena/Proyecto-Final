@@ -75,7 +75,7 @@ public class Utilidades {
                 for (String frame : frames) {
                     System.out.print("\r" + frame); // Imprimimos el cuadro de animación
                     try {
-                        Thread.sleep(300) // Espera constante de 300 ms
+                        Thread.sleep(300); // Espera constante de 300 ms
                     } catch (InterruptedException ignored) {}
                 }
             }
