@@ -1,5 +1,6 @@
 package Colmena;
 import java.io.Serializable;
+
 //Clase para representar un apicultor
 public class Apicultor implements Serializable {
     public String nombre;
