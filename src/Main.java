@@ -210,7 +210,7 @@ public class Main {
                                     }
                                 } else {
                                     // Si solo hay uno, edita directamente el apicultor.
-                                    editarApicultor(apicultoresConNombre.get(0), apicultores);
+                                    editarApicultor(apicultoresConNombre.getFirst(), apicultores);
                                 }
                             }
                         }
