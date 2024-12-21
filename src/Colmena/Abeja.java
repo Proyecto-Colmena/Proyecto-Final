@@ -19,7 +19,7 @@ public class Abeja implements Serializable {
     // Método que devuelve la información del estado de salud de la abeja en formato de cadena.
     // La información se muestra con el formato: "❤️ Estado de Salud: [estadoSalud]"
     public String getInfo() {
-        // Se utiliza String.format para formatear y devolver el estado de salud de la abeja.
+        // Se utiliza String format para formatear y devolver el estado de salud de la abeja.
         return String.format("❤️ Estado de Salud: %s%n", estadoSalud);
     }
 }
