@@ -1,20 +1,20 @@
 package Colmena;
 
 public class AbejaReina extends Abeja {
-  
-  // Constructor
-  public AbejaReina(String nombre) {
-    super(nombre, "Abeja Reina");
-  }
+    int edad;
+    double productividad;
 
-  // Método específico de la abeja reina
-  public void supervisarColmena() {
-    System.out.println(getNombre() + " supervisa el trabajo de las abejas obreras y asegura el orden en la colmena.");
-  }
+    public AbejaReina(int edad, String estadoSalud, double productividad) {
+        super(estadoSalud);
+        this.edad = edad;
+        this.productividad = productividad;
+    }
 
-  // Sobrescritura del método trabajar
-  @Override
-  public void trabajar() {
-    System.out.println(getNombre() + " no trabaja físicamente, pero supervisa la colmena.");
-  }
+    public String getInfo() {
+        return super.getInfo() + String.format("""
+                👑 Abeja Reina
+                🕰️ Edad: %d años
+                🍯 Productividad: %.2f kg de miel
+                """, edad, productividad);
+    }
 }
