@@ -3,6 +3,31 @@ import java.util.List;
 import java.util.stream.Collectors;
 //Inicio de clase Apiario
 
+public class Apiario {
+
+    static class Colmena {
+        private String id;
+        private double produccionMiel; // En kilogramos
+        private String estadoSalud;    // "Saludable", "Enferma", "Crítica"
+
+        public Colmena(String id, double produccionMiel, String estadoSalud) {
+            this.id = id;
+            this.produccionMiel = produccionMiel;
+            this.estadoSalud = estadoSalud;
+        }
+        //LLama la clase de validacion id
+        public String getId() {
+            return id;
+        }
+
+        public double getProduccionMiel() {
+            return produccionMiel;
+        }
+            
+        public String getEstadoSalud() {
+            return estadoSalud;
+        }
+
         @Override
         public String toString() {
             return "Colmena{id='" + id + "', produccionMiel=" + produccionMiel + ", estadoSalud='" + estadoSalud + "'}";
