@@ -1,5 +1,4 @@
 package Colmena;
-
 import java.io.Serializable;
 
 public class Abeja implements Serializable {
